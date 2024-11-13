@@ -12,6 +12,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="mask">
+        <div class="loader"></div>
+    </div>
     <header class="header">
         <div class="header__container">
             <div class="header__wrap">
@@ -45,6 +48,14 @@
         </div>
     <main class="card">
         <article class="content">
+            <div class="search-sort"> 
+                <input type="text" id="searchInput" placeholder="Поиск...">
+                <select id="sortSelect">
+                  <option value="name">По названию</option>
+                </select>
+            </div>
+            
+            <div id="attractions-container"></div>
             <section id="card1" class="card__pag">
                 <div class="card__card">
                     <div class="card__card-block">
@@ -61,7 +72,7 @@
                         <img class="card__card-pic" src="./img/bashnya-tyubeteyka-.jpg" alt="">
                         <p class="card__card-txt-pic">Башня «Тюбетейка»</p>
                     </div>
-                    <p class="card__card-txt">Самой экстравагантной визиткой Набережных Челнов горожане считают единственный местный небоскреб «2.18». Свое народное название «Тюбетейка» башня получила за внешнюю схожесть верхнего яруса с традиционным головным убором азиатских народов. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veritatis assumenda consectetur ipsa natus esse nemo, iusto vitae adipisci, recusandae, harum repellendus. Accusantium itaque exercitationem </p>
+                    <p class="card__card-txt">Самой экстравагантной визиткой Набережных Челнов горожане считают единственный местный небоскреб «2.18». Свое народное название «Тюбетейка» башня получила за внешнюю схожесть верхнего яруса с традиционным головным убором азиатских народов.</p>
                     <p class="card__card-add">2-й комплекс, 18. Остановка транспорта «Бульвар Энтузиастов»</p>
                 </div>
             </section>
@@ -141,4 +152,5 @@
 </body>
 <script src="./js/attrac.js"></script>
 <script src="./js/index.js"></script>
+<script src="./js/fetch.js"></script>
 </html>
